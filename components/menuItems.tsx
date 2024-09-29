@@ -1,4 +1,5 @@
 "use client";
+import { IconChevronRight } from "@tabler/icons-react";
 import React, { useState } from "react";
 
 // Sample JSON data
@@ -171,7 +172,7 @@ const MenuScreen = () => {
       {/* Category Section */}
       {menuData.map((categoryData, index) => (
         <div key={index} className="mt-4">
-          <div className="sticky top-0 bg-gray-100 p-2 z-10 shadow-md">
+          <div className="sticky top-0 p-2 z-10 shadow-md mb-1">
             <h2 className="font-semibold text-lg">
               {categoryData.category} ({categoryData.items.length})
             </h2>
@@ -225,11 +226,11 @@ const MenuScreen = () => {
 
                   {/* More Details and Add Button */}
                   <div className="flex items-center justify-between mt-2">
-                    <button className="text-gray-500 text-sm">
-                      More Details
+                    <button className="text-gray-500 border px-2 py-1 rounded-xl text-sm font-xl flex align-center justify-center">
+                    More Details <IconChevronRight height={20} />
                     </button>
-                    <button className="bg-green-500 text-white px-4 py-1 rounded-lg">
-                      {"Add"}
+                    <button className="text-green-600 border font-bold bg-white px-4 py-1 rounded-lg">
+                      {"ADD"}
                     </button>
                   </div>
                 </div>
