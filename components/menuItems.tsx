@@ -229,7 +229,7 @@ const MenuScreen = () => {
                       More Details
                     </button>
                     <button className="bg-green-500 text-white px-4 py-1 rounded-lg">
-                      {item.customisable ? "Customisable" : "Add"}
+                      {"Add"}
                     </button>
                   </div>
                 </div>
