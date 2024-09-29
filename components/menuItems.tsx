@@ -1,6 +1,7 @@
 "use client";
 import { IconChevronRight } from "@tabler/icons-react";
 import React, { useState } from "react";
+import FloatingMenu from "./ui/floatinMenu";
 
 // Sample JSON data
 const menuData = [
@@ -152,27 +153,11 @@ const MenuScreen = () => {
 
   return (
     <div className="container mx-auto p-4">
-      {/* Search Bar */}
-      {/* <div className="sticky top-0 bg-white z-50">
-        <div className="flex items-center justify-between py-2">
-          <input
-            type="text"
-            placeholder="Search in Menu..."
-            className="border rounded-lg w-full p-2"
-          />
-        </div> */}
-      {/* Filters */}
-      {/* <div className="flex justify-between my-2 space-x-2">
-          <button className="flex-1 bg-gray-100 p-2 rounded-lg">Veg/Non-Veg</button>
-          <button className="flex-1 bg-gray-100 p-2 rounded-lg">Ratings 4.0+</button>
-          <button className="flex-1 bg-gray-100 p-2 rounded-lg">Bestseller</button>
-        </div>
-      </div> */}
-
+        <FloatingMenu />
       {/* Category Section */}
       {menuData.map((categoryData, index) => (
         <div key={index} className="mt-4">
-          <div className="sticky top-0 p-2 z-10 shadow-md mb-1">
+          <div className="sticky top-0 p-2 z-10 shadow-md mb-1 rounded-xl">
             <h2 className="font-semibold text-lg">
               {categoryData.category} ({categoryData.items.length})
             </h2>

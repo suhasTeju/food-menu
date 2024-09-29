@@ -68,8 +68,8 @@ export const Navbar = () => {
           fill="none"
           stroke="currentColor"
           stroke-width="1.25"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart ml-2"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
